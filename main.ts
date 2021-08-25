@@ -218,7 +218,7 @@ basic.forever(() => {
 
 function reset(){
     wrong()
-    waitingForTimeout = false;
+    
 }
 
 let isExecuting = false
@@ -420,6 +420,7 @@ function wrong(){
         strip.setPixelColor(i, neopixel.rgb(0, 0, 0))
     }
     completion = 0
+    waitingForTimeout = false;
 }
 
 function testStrip(){
