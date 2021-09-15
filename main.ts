@@ -169,7 +169,7 @@ poly = false
 let outPut = 0
 let myPins: number[] = []
 basic.showLeds(`
-    . . . . .
+    . . . . #
     . # . . .
     . # # . .
     . # # # .
@@ -399,6 +399,7 @@ function win(){
     strip.show()
     completion = 0
     radio.sendString("K")
+    control.reset()
 }
 
 function wrong(){
